@@ -5,10 +5,30 @@
     */
 
     //ENTRADA
-
-    
+    const numero1= prompt(`Insira o primeiro número:`);
+    const numero2= prompt(`Insira o segundo número:`);
+    const numero3= prompt(`Insira o terceiro número:`);
     //PROCESSAMENTO
-    
+    if(numero1>numero2 && numero1>numero3 && numero2>numero3){
+        alert(`Ordem decrescente: ${numero1}, ${numero2}, ${numero3}.`)
+    }
+    else if(numero1>numero2 && numero1>numero3 && numero3>numero2){
+        alert(`Ordem decrescente: ${numero1}, ${numero3}, ${numero2}.`)
+    }
+    else if(numero2>numero1 && numero2>numero3 && numero1>numero3){
+        alert(`Ordem decrescente: ${numero2}, ${numero1}, ${numero3}.`)
+    }
+    else if(numero2>numero1 && numero2>numero3 && numero3>numero1){
+        alert(`Ordem decrescente: ${numero2}, ${numero3}, ${numero1}.`)
+    }
+    else if(numero3>numero1 && numero3>numero2 && numero1>numero2){
+        alert(`Ordem decrescente: ${numero3}, ${numero1}, ${numero2}.`)
+    }
+    else if(numero3>numero1 && numero3>numero2 && numero2>numero1){
+        alert(`Ordem decrescente: ${numero3}, ${numero2}, ${numero1}.`)
+    }
     //SAÍDA
-    
+    else {
+        alert(`Os números são iguais. `)
+    }
 </script>
