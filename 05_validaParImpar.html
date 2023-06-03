@@ -5,12 +5,12 @@
     */
 
     //ENTRADA
-    const numero=Number(prompt(` Insira um número inteiro: `)).trim();
-    const divisaoPor2= Number(numero/2)
+    const numero=Number(prompt(` Insira um número inteiro: `));
+    const divisaoPor2= numero/2;
     const parteDecimal= divisaoPor2 - Math.floor(divisaoPor2);
     
     //PROCESSAMENTO
-    if(parteDecimal === '0') {
+    if(parteDecimal == '0') {
         alert(`O número é par `)
     }
     else{
