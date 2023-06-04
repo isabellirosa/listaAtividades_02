@@ -8,12 +8,52 @@
     */
 
     //ENTRADA
-
-
+    const numero1= Number(prompt(`Insira o primeiro número: `));
+    const numero2=Number(prompt(`Insira o segundo número: `));
+    const operaçao= prompt(` Qual operação você deseja fazer? Insira A para adição, S para subtração, M para multiplicação e D para divisão. `).trim().toUpperCase();
+    let resultado = Number();
     //PROCESSAMENTO
+    if(operaçao=='A'){
+         resultado= Number(numero1+numero2)
+    }
+    else if(operaçao=='S'){
+          resultado= Number(numero1-numero2)
+    }
+    else if(operaçao=='M'){
+         resultado=Number(numero1*numero2)
+    }
+    else if(operaçao=='D'){
+      resultado= Number(numero1/numero2)
+    }
+    else{
+        alert(` Não foi possivel realizar a operação`);
+    }
 
-    
+    const divisaoPor2= resultado/2;
+    const parteDecimal= divisaoPor2 - Math.floor(divisaoPor2);
+    if(parteDecimal == '0') {
+        alert(`O número é par `)
+    }
+    else{
+        alert(`O número é impar `)
+    }
+
+    if(resultado>'0') {
+        alert(`O número é positivo `)
+    }
+    else{
+        alert(`O número é negativo `)
+    }
+
+    const parteDecimal1= resultado - Math.trunc(resultado);
+    if(parteDecimal1 == '0') {
+        alert(`O número é inteiro `)
+    }
+    else{
+        alert(`O número é decimal `)
+    }
     //SAÍDA
+    document.write(`O resultado da operação é ${resultado}`);
 
 
 </script>

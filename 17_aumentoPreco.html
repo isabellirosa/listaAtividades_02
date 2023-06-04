@@ -7,10 +7,25 @@
         //- acima de 1500: aumento de 5 %
     
     // Entrada
+    const preço=Number(prompt(`Insira o preço do produto: `).trim().replace(',','.'))
+    const porcento20=preço*1.20
+    const porcento15=preço*1.15
+    const porcento10=preço*1.10
+    const porcento5=preço*1.05
 
-    
     // Processamento
-
+    if(preço<=280){
+        alert(`O preço é R$${porcento20.toFixed(2).replace('.',',')}`);
+    }
+    else if(preço<=700){
+        alert(`O preço é R$${porcento15.toFixed(2).replace('.',',')}`);
+    }
+    else if(preço<=1500){
+        alert(`O preço é R$${porcento10.toFixed(2).replace('.',',')}`);
+    }
+    else{
+        alert(`O preço é R$${porcento5.toFixed(2).replace('.',',')}`);
+    }
     
     // Saída
 

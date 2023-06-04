@@ -14,12 +14,40 @@
     */
 
     //ENTRADA
-
-
+    const litro = Number(prompt(`Insira o número de litros vendidos:`).replace(',', '.'));
+    const tipo = prompt(`Qual o tipo de combustível? Insira A para álcool e G para gasolina`).toUpperCase();
+    const alcool1=0.97*litro*6.10;
+    const alcool2=0.95*litro*6.10;
+    const gasolina1=0.96*litro*6.50;
+    const gasolina2=0.94*litro*6.50;
     //PROCESSAMENTO
+    if(tipoCombustivel=='A'){
+        if(litros<=20){
+          alert( ` Valor total a ser pago: R$${alcool1.toFixed(2).replace(".",",")}.`);
+        }
+        else if(litros>20){
+            alert(`Valor total a ser pago: R$${alcool2.toFixed(2).replace(".",",")}.`);
+        }
+        else{
+            alert(`Valor incompatível`);
+        }
+    }
+
+    if(tipoCombustivel=='G'){
+        if(litros<=20){
+          alert( ` Valor total a ser pago: R$${gasolina2.toFixed(2).replace(".",",")}.`);
+        }
+        else if(litros>20){
+            alert(`Valor total a ser pago: R$${gasolina.toFixed(2).replace(".",",")}.`);
+        }
+        else{
+            alert(`Valor incompatível`);
+        }
+    }
 
     
-    //SAÍDA
-
-
-</script>
+</script> if(tipo==='A' ){
+        if(litros<=20){
+    alert(`Preço: R$${alcool1.toFixed(2).replace('.',',')}`);
+    }
+    }
