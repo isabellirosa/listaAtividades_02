@@ -16,40 +16,26 @@
     const pergunta3= prompt(` Você mora perto da vítima? Insira SIM ou NÃO `).toUpperCase();
     const pergunta4= prompt(` Você devia para a vítima? Insira SIM ou NÃO `).toUpperCase();
     const pergunta5= prompt(` Você já trabalhou com a vítima? Insira SIM ou NÃO `).toUpperCase();
-    const soma= Number(0);
+    let soma = 0;
     //PROCESSAMENTO
+
     if(pergunta1=='SIM'){
-       const soma1=Number(soma+1);
-    }
-    else{
-        const soma1=soma;
+       soma = soma + 1; //soma++
     }
     if(pergunta2=='SIM'){
-        const soma2=Number(soma1+1);
-    }
-    else{
-        const soma2=soma1;
+        soma++;
     }
     if(pergunta3=='SIM'){
-        const soma3=Number(soma2+1);
-    }
-    else{
-        const soma3=soma2;
+        soma++;
     }
     if(pergunta4='SIM'){
         const soma4=Number(soma3+1);
     }
-    else{
-        const soma4=soma3;
-    }
     if(pergunta5=='SIM'){
         const soma5=Number(soma4+1);
     }
-    else{
-        const soma5=soma4;
-    }
      
-    if(soma5 == 0 ||soma5 == 1){
+    if(soma <= 1){
         alert(`INOSCENTE`);
     }
     else if(soma5==2){
