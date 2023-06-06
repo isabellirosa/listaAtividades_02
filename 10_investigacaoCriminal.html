@@ -20,7 +20,7 @@
     //PROCESSAMENTO
 
     if(pergunta1=='SIM'){
-       soma = soma + 1; //soma++
+       soma ++; //soma+1
     }
     if(pergunta2=='SIM'){
         soma++;
@@ -28,26 +28,26 @@
     if(pergunta3=='SIM'){
         soma++;
     }
-    if(pergunta4='SIM'){
-        const soma4=Number(soma3+1);
+    if(pergunta4=='SIM'){
+        soma++;
     }
     if(pergunta5=='SIM'){
-        const soma5=Number(soma4+1);
+        soma++;
     }
      
     if(soma <= 1){
         alert(`INOSCENTE`);
     }
-    else if(soma5==2){
+    if(soma<=2){
         alert(`SUSPEITO`);
     }
-    else if(soma5 == 3 || soma5 == 4){
+    if(soma<=4){
         alert(`CÚMPLICE`);
     }
-    else{
+    if(soma>4){
         alert(`ASSASINO`);
     }
-    alert(`${soma5}`);
+
     //SAÍDA
 
 </script>
