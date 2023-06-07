@@ -14,16 +14,16 @@
     let resultado = Number();
     //PROCESSAMENTO
     if(operaçao=='A'){
-         resultado= Number(numero1+numero2)
+         resultado= Number(numero1+numero2);
     }
     else if(operaçao=='S'){
-          resultado= Number(numero1-numero2)
+          resultado= Number(numero1-numero2);
     }
     else if(operaçao=='M'){
-         resultado=Number(numero1*numero2)
+         resultado=Number(numero1*numero2);
     }
     else if(operaçao=='D'){
-      resultado= Number(numero1/numero2)
+      resultado= Number(numero1/numero2);
     }
     else{
         alert(` Não foi possivel realizar a operação`);
@@ -32,25 +32,25 @@
     const divisaoPor2= resultado/2;
     const parteDecimal= divisaoPor2 - Math.floor(divisaoPor2);
     if(parteDecimal == '0') {
-        alert(`O número é par `)
+        alert(`O número é par `);
     }
     else{
-        alert(`O número é impar `)
+        alert(`O número é impar `);
     }
 
     if(resultado>'0') {
-        alert(`O número é positivo `)
+        alert(`O número é positivo `);
     }
     else{
-        alert(`O número é negativo `)
+        alert(`O número é negativo `);
     }
 
     const parteDecimal1= resultado - Math.trunc(resultado);
     if(parteDecimal1 == '0') {
-        alert(`O número é inteiro `)
+        alert(`O número é inteiro `);
     }
     else{
-        alert(`O número é decimal `)
+        alert(`O número é decimal `);
     }
     //SAÍDA
     document.write(`O resultado da operação é ${resultado}`);
