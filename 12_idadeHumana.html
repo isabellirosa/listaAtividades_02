@@ -7,10 +7,24 @@
     // - cães grandes: fator 7.
 
     // Entrada
+    const idade=Number(prompt(` Insira a idade do seu cão`).trim())
+    const porte=Number(prompt(` Qual é o porte do seu cão? Insira 1 caso seja pequeno, 2 caso seja médio e 3 caso seja grande`).trim())
 
-    
     // Processamento
-
+    if(porte==1){
+        const idadereal=idade*5
+        alert(`A idade real do cão é ${idadereal} anos.`);
+    }
+    if(porte==2){
+        const idadereal=idade*6
+        alert(`A idade real do cão é ${idadereal} anos.`);
+    }
+    if(porte==3){
+        const idadereal=idade*7
+        alert(`A idade real do cão é ${idadereal} anos.`);
+    }
+    
+    
     
     // Saída
 
