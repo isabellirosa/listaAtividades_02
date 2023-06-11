@@ -19,9 +19,36 @@
     const dezenas= Math.trunc((numero-(centenas*100))/10);
     const unidades= Math.trunc(numero-(centenas*100)-(dezenas*10));
 
-    //SAÍDA
     if(numero<1000){
-        alert(` ${numero} = ${centenas} centenas, ${dezenas} dezenas e ${unidades} unidades.`);
+        let mensagemFinal = "";
+        if (centenas > 0) {
+            mensagemFinal = mensagemFinal + `${centenas} Centena`;
+            if (centenas > 1) {
+                mensagemFinal = mensagemFinal + "s";
+            }
+            if (dezenas > 0 && unidades > 0) {
+                mensagemFinal = mensagemFinal + ", ";
+            }
+            else if (dezenas > 0 || unidades > 0) {
+                mensagemFinal = mensagemFinal + " e ";
+            }
+        }
+        if (dezenas > 0) {
+            mensagemFinal = mensagemFinal + `${dezenas} Dezena`;
+            if (dezenas > 1) {
+                mensagemFinal = mensagemFinal + "s";
+            }            
+            if (unidades > 0) {
+                mensagemFinal = mensagemFinal + " e ";
+            }
+        }
+        if (unidades > 0) {
+            mensagemFinal = mensagemFinal + `${unidades} Unidade`;
+            if (unidades > 1) {
+                mensagemFinal = mensagemFinal + "s";
+            }
+        }
+        alert(mensagemFinal);
     }
     else{
         alert(`O número é maior ou igual a 1000.`);
