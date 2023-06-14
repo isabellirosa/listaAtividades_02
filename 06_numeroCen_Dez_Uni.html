@@ -15,9 +15,9 @@
     const numero= Number(prompt(`Insira um número inteiro menor que 1000: `));
 
     //PROCESSAMENTO
-    const centenas= Math.trunc(numero/100);
-    const dezenas= Math.trunc((numero-(centenas*100))/10);
-    const unidades= Math.trunc(numero-(centenas*100)-(dezenas*10));
+    const centenas= Math.floor(numero/100);
+    const dezenas= Math.floor((numero-(centenas*100))/10);
+    const unidades= Math.floor(numero-(centenas*100)-(dezenas*10));
 
     if(numero<1000){
         let mensagemFinal = "";

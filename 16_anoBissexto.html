@@ -7,7 +7,7 @@
     
     // Processamento
     const divisao= anos/4;
-    const resto= divisao - Math.trunc(divisao);
+    const resto= divisao - Math.floor(divisao);
     if(resto == '0') {
         alert(`O ano é bissexto. `);
     }
