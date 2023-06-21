@@ -3,12 +3,16 @@
     // Recebe um ano e informa se ele é bissexto ou não.
 
     // Entrada
-    const anos=Number(prompt(`Insira um ano:`));
+    const anos=Number(prompt(`Insira um ano:`).trim());
     
     // Processamento
     const divisao= anos/4;
     const resto= divisao - Math.floor(divisao);
-    if(resto == '0') {
+    const divisao100= anos/100;
+    const resto100= divisao100 - Math.floor(divisao);
+    const divisao400= anos/400;
+    const resto400= divisao400 - Math.floor(divisao);
+    if((resto =='0' && resto100 !='0')||(resto400 == '0')){
         alert(`O ano é bissexto. `);
     }
     else{
